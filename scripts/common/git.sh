@@ -22,6 +22,7 @@ git config --global transfer.fsckobjects true
 echo
 echo "Installing git hooks for cred-alert"
 # for more information see https://github.com/pivotal-cf/git-hooks-core
+rm -rf $HOME/workspace/git-hooks-core
 git clone https://github.com/pivotal-cf/git-hooks-core $HOME/workspace/git-hooks-core
 git config --global --add core.hooksPath $HOME/workspace/git-hooks-core
 # install cred-alert-cli
